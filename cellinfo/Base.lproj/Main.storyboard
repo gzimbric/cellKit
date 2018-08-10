@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CellularInfo2-->
+        <!--cellKit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="CellularInfo2" id="BYZ-38-t0r" customClass="ViewController" customModule="cellinfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="cellKit" id="BYZ-38-t0r" customClass="ViewController" customModule="cellinfo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,17 +30,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © Gabe Zimbric 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9a-yL-UUK">
+                                <rect key="frame" x="65.5" y="637" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F9a-yL-UUK" secondAttribute="bottom" constant="9" id="0y1-xQ-Xu1"/>
                             <constraint firstItem="jNE-vY-bTM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GL2-dJ-Uta"/>
                             <constraint firstItem="jNE-vY-bTM" firstAttribute="centerY" secondItem="zH6-NO-fNF" secondAttribute="centerY" id="Ukf-O6-3t7"/>
                             <constraint firstItem="zH6-NO-fNF" firstAttribute="leading" secondItem="jNE-vY-bTM" secondAttribute="trailing" constant="8" symbolic="YES" id="eU5-ef-Byb"/>
                             <constraint firstItem="jNE-vY-bTM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="gkW-ji-LnI"/>
+                            <constraint firstItem="F9a-yL-UUK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntx-qW-a5Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="cellKit" id="v7V-Ir-6px"/>
+                    <navigationItem key="navigationItem" title="cellKit" id="v7V-Ir-6px">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="lSl-Wn-6wg">
+                            <connections>
+                                <action selector="refreshRadio:" destination="BYZ-38-t0r" id="lo3-4r-Qtg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="carrierLabel" destination="jNE-vY-bTM" id="HbR-8v-ysO"/>
                         <outlet property="radioLabel" destination="zH6-NO-fNF" id="itp-M7-Gh5"/>
