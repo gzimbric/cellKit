@@ -47,18 +47,18 @@ class ViewController: UIViewController {
         let telefonyInfo = CTTelephonyNetworkInfo()
         if let radioAccessTechnology = telefonyInfo.currentRadioAccessTechnology{
             switch radioAccessTechnology {
-            case CTRadioAccessTechnologyLTE: self.radioLabel.text = "LTE (4G)"; print("Refreshed: LTE (4G)")
-            case CTRadioAccessTechnologyWCDMA: self.radioLabel.text = "WCDMA (3G)"; print("Refreshed: WCDMA (3G)")
-            case CTRadioAccessTechnologyEdge: self.radioLabel.text = "EDGE (2G)"; print("Refreshed: EDGE (2G)")
-            case CTRadioAccessTechnologyeHRPD: self.radioLabel.text = "eHRPD (3G)"; print("Refreshed: eHRPD (3G)")
-            case CTRadioAccessTechnologyCDMA1x: self.radioLabel.text = "CDMA (1x)"; print("Refreshed: CDMA (1x)")
-            case CTRadioAccessTechnologyCDMAEVDORev0: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORev0 (3G)")
-            case CTRadioAccessTechnologyCDMAEVDORevA: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORevA (3G)")
-            case CTRadioAccessTechnologyCDMAEVDORevB: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORevB (3G)")
-            case CTRadioAccessTechnologyGPRS: self.radioLabel.text = "GPRS (2G/3G)"; print("Refreshed: GPRS (2G/3G)")
-            case CTRadioAccessTechnologyHSDPA: self.radioLabel.text = "HSDPA (3G+)"; print("Refreshed: HSDPA (3G+)")
-            case CTRadioAccessTechnologyHSUPA: self.radioLabel.text = "HSUPA (3G+)"; print("Refreshed: HSUPA (3G+)")
-            default: self.radioLabel.text = "Unknown"; print("Refreshed: Unknown")
+                case CTRadioAccessTechnologyLTE: self.radioLabel.text = "LTE (4G)"; print("Refreshed: LTE (4G)")
+                case CTRadioAccessTechnologyWCDMA: self.radioLabel.text = "WCDMA (3G)"; print("Refreshed: WCDMA (3G)")
+                case CTRadioAccessTechnologyEdge: self.radioLabel.text = "EDGE (2G)"; print("Refreshed: EDGE (2G)")
+                case CTRadioAccessTechnologyeHRPD: self.radioLabel.text = "eHRPD (3G)"; print("Refreshed: eHRPD (3G)")
+                case CTRadioAccessTechnologyCDMA1x: self.radioLabel.text = "CDMA (1x)"; print("Refreshed: CDMA (1x)")
+                case CTRadioAccessTechnologyCDMAEVDORev0: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORev0 (3G)")
+                case CTRadioAccessTechnologyCDMAEVDORevA: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORevA (3G)")
+                case CTRadioAccessTechnologyCDMAEVDORevB: self.radioLabel.text = "EVDO (3G)"; print("Refreshed: EVDORevB (3G)")
+                case CTRadioAccessTechnologyGPRS: self.radioLabel.text = "GPRS (2G/3G)"; print("Refreshed: GPRS (2G/3G)")
+                case CTRadioAccessTechnologyHSDPA: self.radioLabel.text = "HSDPA (3G+)"; print("Refreshed: HSDPA (3G+)")
+                case CTRadioAccessTechnologyHSUPA: self.radioLabel.text = "HSUPA (3G+)"; print("Refreshed: HSUPA (3G+)")
+                default: self.radioLabel.text = "Unknown"; print("Refreshed: Unknown")
             }
         }
     }
